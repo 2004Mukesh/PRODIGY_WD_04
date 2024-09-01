@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <h1>Hello, I'm [Your Name]</h1>
+            <p>Web Developer | Front-End Enthusiast | Problem Solver</p>
+            <img src="your-photo.jpg" alt="Your Photo" class="profile-photo">
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with experience in front-end technologies such as HTML, CSS, JavaScript, and frameworks like React. I enjoy building clean, responsive, and user-friendly websites and applications.</p>
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor's Degree in Computer Science - XYZ University</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <li>Web Developer at ABC Company (2021-Present)</li>
+                <li>Intern at Web Solutions (2020-2021)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Project</h2>
+            <div class="project">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
+            </div>
+            <div class="project">
+               
+                
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+            <ul>
+                <li>Email: youremail@example.com</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">yourprofile</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript (optional) -->
+    <script src="script.js"></script>
+</body>
+</html>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.section {
+    padding: 80px 20px;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Home Section */
+#home {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+/* About Me Section */
+#about {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 60px;
+    margin-top: 0;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #e9ecef;
+    color: #333;
+}
+
+.project {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+    color: #333;
+    padding-bottom: 60px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
