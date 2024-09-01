@@ -48,14 +48,14 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2>Project</h2>
+            <h2>Projects</h2>
             <div class="project">
                 <h3>Project 1: Portfolio Website</h3>
                 <p>A personal portfolio website built using HTML, CSS, and JavaScript to showcase my work and skills.</p>
             </div>
             <div class="project">
-               
-                
+                <h3>Project 2: E-commerce Website</h3>
+                <p>An e-commerce website developed with React and Node.js, featuring user authentication and payment integration.</p>
             </div>
             <!-- Add more projects as needed -->
         </div>
@@ -82,7 +82,7 @@
     <script src="script.js"></script>
 </body>
 </html>
-/* General Styles */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -186,7 +186,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
-// Smooth Scroll
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
